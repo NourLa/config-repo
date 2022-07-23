@@ -11,7 +11,7 @@ zuul:
       
    host:
       connect-timeout-millis: 5000
-      socket-timeout-millis: 10000
+      socket-timeout-millis: 30000
          
 server:
    port:8080
@@ -31,7 +31,7 @@ hystrix:
                     enabled: false
         isolation :
           thread :
-            interruptOnTimeout : false
+            interruptOnTimeout : 10000
 
 spring:
     servlet:
