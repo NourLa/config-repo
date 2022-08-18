@@ -36,8 +36,8 @@ hystrix:
 spring:
     servlet:
         multipart:
-            max-file-size: 500MB
-            max-request-size: 500MB
+            max-file-size: 50MB
+            max-request-size: 50MB
             enabled: true
                  
 ribbon:
