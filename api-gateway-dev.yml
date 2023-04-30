@@ -2,9 +2,12 @@ zuul:
    ignoredServices: "*"
    sensitiveHeaders: Cookie,Set-Cookie
    routes:
+      E-LEARNING:
+          path: /E-learning/**
+          serviceId: e-learning
       AUTH:
           path: /AUTH/**
-          serviceId: AUTHENTIFICATION
+          serviceId: authentification
       
    host:
       connect-timeout-millis: 5000
@@ -29,6 +32,7 @@ hystrix:
         isolation :
           thread :
             interruptOnTimeout : 10000
+
 spring:
     servlet:
         multipart:
