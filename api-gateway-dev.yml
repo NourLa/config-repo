@@ -4,7 +4,7 @@ zuul:
    routes:
       AUTH:
           path: /AUTH/**
-          uri: http://127.0.0.1:8093/authentification
+          serviceId: authentification
       
    host:
       connect-timeout-millis: 5000
