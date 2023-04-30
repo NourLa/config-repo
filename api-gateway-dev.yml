@@ -29,8 +29,6 @@ hystrix:
         isolation :
           thread :
             interruptOnTimeout : 10000
-            timeoutInMilliseconds: 5000
-
 spring:
     servlet:
         multipart:
