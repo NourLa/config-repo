@@ -2,12 +2,9 @@ zuul:
    ignoredServices: "*"
    sensitiveHeaders: Cookie,Set-Cookie
    routes:
-      E-LEARNING:
-          path: /E-learning/**
-          serviceId: e-learning
       AUTH:
           path: /AUTH/**
-          serviceId: authentification
+          uri: http://127.0.0.1:8093/authentification
       
    host:
       connect-timeout-millis: 5000
@@ -44,7 +41,7 @@ ribbon:
   ConnectTimeout: 30000
   ReadTimeout: 990000
   eureka:
-    enabled: false
+    enabled: true
 
 endpoints:
   restart:
