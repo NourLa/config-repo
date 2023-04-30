@@ -44,7 +44,7 @@ ribbon:
   ConnectTimeout: 30000
   ReadTimeout: 990000
   eureka:
-    enabled: true
+    enabled: false
 
 endpoints:
   restart:
