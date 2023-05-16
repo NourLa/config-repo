@@ -3,8 +3,8 @@ zuul:
    sensitiveHeaders: Cookie,Set-Cookie
    routes:
       E-LEARNING:
-          path: /E-learning/**
-          serviceId: e-learning
+          path: /PROJECTS/**
+          serviceId: projects
       AUTH:
           path: /AUTH/**
           serviceId: authentification
