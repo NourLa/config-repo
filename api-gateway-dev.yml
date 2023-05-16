@@ -2,7 +2,7 @@ zuul:
    ignoredServices: "*"
    sensitiveHeaders: Cookie,Set-Cookie
    routes:
-      E-LEARNING:
+      PROJECTS:
           path: /PROJECTS/**
           serviceId: projects
       AUTH:
